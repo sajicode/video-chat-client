@@ -17,7 +17,8 @@ const StyledVideo = styled.video`
     width: 50%;
 `;
 
-const ENDPOINT = "http://127.0.0.1:2020";
+// const ENDPOINT = process.env.REACT_APP_SERVER_URL; // * for local
+const ENDPOINT = "/";
 
 const Video = (props) => {
     const ref = useRef();
