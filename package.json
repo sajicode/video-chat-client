@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node server.js",
     "client": "cd client; yarn start",
-    "clientinstall": "cd client; yarn",
+    "client:install": "cd client; yarn",
+    "client:build": "cd client; yarn build",
     "dev": "concurrently \"yarn start\" \"yarn client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client; yarn && yarn build"
   },
